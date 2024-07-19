@@ -8,9 +8,13 @@ public class ConverterMileAndKilometer {
     private static Double convertMilesToKilometers(Double miles) {
         return miles / MILES_PER_INCH;
     }
-
-    private static String print(double value) {
-        return value + " " + MILES_PER_INCH;
+    private static Double convertKilometersToMiles(Double kilometers) {
+        return kilometers * MILES_PER_INCH;
     }
+
+    private static void print(double value) {
+        System.out.println(value + " " + MILES_PER_INCH);
+    }
+
 }
 
