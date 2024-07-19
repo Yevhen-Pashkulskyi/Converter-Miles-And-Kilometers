@@ -1,11 +1,17 @@
+import java.util.Scanner;
+
 public class ConverterMileAndKilometer {
     private final static Double MILES_PER_INCH = 1.609344;
 
     public static void main(String[] args) {
-        double kilometersToMiles = 100;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter kilometers per kilometer: ");
+        double kilometersToMiles = input.nextDouble();
         print(convertKilometersToMiles(kilometersToMiles));
 
-        double milesToKilometers = 13.56;
+        System.out.print("Enter miles per inch: ");
+        double milesToKilometers = input.nextDouble();
         print(convertMilesToKilometers(milesToKilometers));
     }
 
