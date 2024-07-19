@@ -5,6 +5,10 @@ public class ConverterMileAndKilometer {
 
     }
 
+    private static Double convertMilesToKilometers(Double miles) {
+        return miles / MILES_PER_INCH;
+    }
+
     private static String print(double value) {
         return value + " " + MILES_PER_INCH;
     }
